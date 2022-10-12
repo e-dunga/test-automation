@@ -19,6 +19,8 @@ namespace TestTallestBuildings
                 {
                     var location = AppDomain.CurrentDomain.BaseDirectory + "../../../../../drivers/chrome/10" + i +"/";
                     driver = new ChromeDriver(@location);
+                    System.Threading.Thread.Sleep(2000);
+                    break;
                 }
                 catch {
                     var strCmdComm = "/C taskkill /F /PID chromedriver.exe";
