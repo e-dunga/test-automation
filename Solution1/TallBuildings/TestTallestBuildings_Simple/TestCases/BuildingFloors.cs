@@ -74,7 +74,6 @@ namespace TestTallestBuildings
         [TearDown]
         public void closeBrowser()
         {
-            //driver.Close();
             driver.Quit();  
         }
     }
